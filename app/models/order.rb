@@ -2,7 +2,7 @@ class Order < ApplicationRecord
 
   enum pay_type: {
     "Check" => 0,
-    "Credt card" => 1,
+    "Credit card" => 1,
     "Purchase order" => 2
   }
 
@@ -16,5 +16,5 @@ class Order < ApplicationRecord
       item.cart_id = nil
       line_items << item
     end
-  end 
+  end
 end
